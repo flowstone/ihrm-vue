@@ -143,6 +143,7 @@
           </div>
         </div>
        <!-- 添加的弹框 -->
+       <!-- 抽取组件
         <el-dialog title="编辑部门" :visible.sync="dialogFormVisible">
           <el-form ref="dataForm" :model="formData" label-width="120px">
             <el-form-item label="部门名称">
@@ -174,7 +175,12 @@
             <el-button type="primary" @click="createData">确定</el-button>
             <el-button @click="dialogFormVisible = false">取消</el-button>
           </div>
-        </el-dialog>
+        </el-dialog> 
+        -->
+        <!-- v-bind:is 绑定组件名称
+             ref: 引用子组件中内容的别名
+         -->
+        <component v-bind:is="deptAdd" ref="deptAdd" ></component>
       </el-card>
     </div>
      
@@ -329,15 +335,18 @@
 
 <script>
 import { organList, saveOrUpdate,detail, remove } from "@/api/base/department";
+import deptAdd from './../components/add';
 export default {
   name: "rganizations-index",
+  components: {deptAdd},
   data() {
-    return {
+    return { 
       activeName: "first",
-      dialogFormVisible: false,
-      parentId: "",
       departData: {},
       formData: {},
+      //dialogFormVisible: false,
+      //parentId: "",
+      deptAdd: 'deptAdd' //配置组件别名
     };
   },
   methods: {
@@ -348,10 +357,14 @@ export default {
       });
     },
     //添加子部门 弹框
-    handlAdd() {
-        this.dialogFormVisible = true;
-        console.log("点击了按钮:", this.dialogFormVisible);
+    handlAdd(parentId) {
+        //this.dialogFormVisible = true;
+        //console.log("点击了按钮:", this.dialogFormVisible);
+        this.$refs.deptAdd.formData = {};
+        this.$refs.deptAdd.parentId = parentId;
+        this.$refs.deptAdd.dialogFormVisible = true;
     },
+    /*
     createData() {
       this.formData.parentId = this.parentId;
       saveOrUpdate(this.formData).then((res) => {
@@ -363,11 +376,15 @@ export default {
         this.dialogFormVisible = false;
       });
     },
+    */
     handleEdit(id) {
         detail({id}).then(res=>{
-            this.formData = res.data.data;
-            this.dialogFormVisible = true;
-            this.parentId = res.data.data.parentId;
+            // this.formData = res.data.data;
+            // this.dialogFormVisible = true;
+            // this.parentId = res.data.data.parentId;
+            this.$refs.deptAdd.formData = res.data.data;
+            this.$refs.deptAdd.dialogFormVisible = true;
+            this.$refs.deptAdd.parentId = res.data.data.parentId;
         });
     },
     handleDelete(obj) {
