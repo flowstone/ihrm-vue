@@ -6,8 +6,8 @@ export default {
         "data" : {
             mobile:"138000138000",
             username:"张三",
-            company:"江苏传智播客教育科技股份有限公司12345678",
-            email:"bipeng@itcast.cn",
+            company:"ihrm",
+            email:"xiao.ming@gmail.com",
         }
     }
 }

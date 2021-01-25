@@ -8,7 +8,7 @@
           </div>
           <div class="headInfoTip">
             <p class="firstChild">早安，HR 专员，祝你开心每一天！</p>
-            <p class="lastChild">HR 专员  |  传智播客-总部-人力资源中心-招聘专员</p>
+            <p class="lastChild">HR 专员  |  IHRM-总部-人力资源中心-招聘专员</p>
           </div>
         </div>
         <div class="fr">
@@ -61,7 +61,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">朱继柳</span> 发布了 第二十期“iHRM大讲堂”互动讨论获奖名单公布</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
@@ -70,7 +70,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">朱继柳</span> 发布了 第二十期“iHRM大讲堂”互动讨论获奖名单公布</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
@@ -79,7 +79,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">朱继柳</span> 发布了 第二十期“iHRM大讲堂”互动讨论获奖名单公布</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
@@ -88,7 +88,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">朱继柳</span> 发布了 第二十期“iHRM大讲堂”互动讨论获奖名单公布</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
@@ -97,7 +97,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">朱继柳</span> 发布了 第二十期“iHRM大讲堂”互动讨论获奖名单公布</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
@@ -106,7 +106,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">朱继柳</span> 发布了 第二十期“iHRM大讲堂”互动讨论获奖名单公布</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
