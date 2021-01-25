@@ -328,7 +328,7 @@
 </style>
 
 <script>
-import { organList, saveOrUpdate } from "@/api/base/department";
+import { organList, saveOrUpdate,detail, remove } from "@/api/base/department";
 export default {
   name: "rganizations-index",
   data() {
@@ -347,6 +347,7 @@ export default {
         this.departData = res.data.data;
       });
     },
+    //添加子部门 弹框
     handlAdd() {
         this.dialogFormVisible = true;
         console.log("点击了按钮:", this.dialogFormVisible);
@@ -362,6 +363,26 @@ export default {
         this.dialogFormVisible = false;
       });
     },
+    handleEdit(id) {
+        detail({id}).then(res=>{
+            this.formData = res.data.data;
+            this.dialogFormVisible = true;
+            this.parentId = res.data.data.parentId;
+        });
+    },
+    handleDelete(obj) {
+        this.$confirm(
+            `本次操作将删除${obj.name},删除后将不可恢复，您确认删除吗？`
+            ).then(()=> {
+                remove({id:obj.id})
+                    .then(res=> {
+                        this.$message({
+                            message:res.data.message,
+                            type:res.data.success?"success":"error"});
+                        location.reload();    
+                    })
+            })
+    }
   },
   created: function () {
     this.getObject();
