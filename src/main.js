@@ -23,6 +23,8 @@ import saasClients from '@/module-saas-clients/';
 
 import departments from '@/module-departments/';
 
+import employees from '@/module-employees/';
+
 import tools from './utils/common.js'
 Vue.prototype.$tools = tools
 
@@ -32,6 +34,8 @@ Vue.use(dashboard, store)
 Vue.use(saasClients, store);
 
 Vue.use(departments, store);
+
+Vue.use(employees, store);
 
 
 /*
